@@ -1,0 +1,1 @@
+colors hex values and names https://xkcd.com/color/rgb/

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "friendhighlighter",
+  "version": "1.0.1",
+
+  "name": "Friend Highlighter",
+  "description": "This is a mod that uses the vanilla glowing mechanic to highlight your friends",
+  "authors": [
+    "icy_turtle aka IncandescentTurtle"
+  ],
+
+  "contact": {
+    "sources": "https://github.com/Incandescent-Turtle/FriendHighlighter",
+    "issues": "https://github.com/Incandescent-Turtle/FriendHighlighter/issues"
+  },
+
+  "environment": "*",
+  "license": "MIT License",
+
+  "entrypoints": {
+    "client": [
+      "mod.icy_turtle.friendhighlighter.FriendHighlighter"
+    ],
+    "modmenu": [
+      "mod.icy_turtle.friendhighlighter.config.ModMenuIntegration"
+    ]
+  },
+
+  "mixins": [
+    "friendhighlighter.mixins.json"
+  ],
+
+  "accessWidener" : "friendhighlighter.accessWidener",
+  "icon": "assets/friendhighlighter/icon.png",
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "cloth-config-fabric": "10.1.117",
+    "modmenu": "6.3.1"
+  }
+}
